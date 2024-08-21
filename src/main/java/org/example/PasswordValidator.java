@@ -17,7 +17,7 @@ public class PasswordValidator {
 //        nextLine method used with the Scanner object to capture user input on the next line
         String password = scanner.nextLine();
 
-
+//if/else statement to check if password entered by the user is valid or not
         if (PasswordValidator.isValidPassword(password)) {
             System.out.println("Valid Password");
         } else {
