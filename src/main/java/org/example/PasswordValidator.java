@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 public class PasswordValidator {
     public static void main(String[] args) {
+
 //        Create Scanner object
         Scanner scanner = new Scanner(System.in);
 
@@ -24,6 +25,7 @@ public class PasswordValidator {
         }
         scanner.close();
     }
+
 
 
     // Method to ensure password is at least 8 characters long
@@ -57,7 +59,7 @@ public class PasswordValidator {
     // Method to validate the password based on all conditions
     public static boolean isValidPassword(String password) {
         return isAtLeastEightCharacters(password) &&
-                containsDigit(password) &&
+//                containsDigit(password) &&
                 containsUpperAndLowerCase(password) &&
                 !isCommonPassword(password);
     }
